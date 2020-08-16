@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Payment - Brand</title>
+    <meta name="twitter:description" content="a simple demo code with git link to generate pdf form html">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="assets/img/pdf-export.png">
+    <meta name="description" content="A simple demo page where you can generate pdf from html page">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="assets/img/pdf-export.png">
+    <meta name="twitter:title" content="How to create pdf form html">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Faq-by-pomdre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/project-section.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container">
+            <div><img src="assets/img/Logo.jpg" width="50" style="border-radius: 50px;"><a class="navbar-brand logo" href="#">Root Android And Ethical Hacker</a></div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="payment.html">Pdf demo page</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page payment-page">
+        <section class="clean-block payment-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Payment</h2>
+                    <p>A demo Enter an amount and click on proceed you will see payment completed page and will give you an option to download invoice !</p>
+                </div>
+                <form id="checkout" onkeyup="onchangetotal()" method="get" action="invoice.html">
+                    <div class="products">
+                        <h3 class="title text-uppercase text-center">Checkout</h3>
+                        <p class="text-right">#<span id="unique-id"></span></p><input class="form-control d-none" type="text" id="order_id" name="order_id">
+                        <div class="item">
+                            <div class="price">
+                                <div class="form-row">
+                                    <div class="col"><span class="price"><strong>₹</strong></span></div>
+                                    <div class="col"><input class="form-control" type="number" id="item1-val" name="item1" value="0"></div>
+                                </div>
+                            </div>
+                            <p class="item-name">Product 1</p>
+                            <p class="item-description">Enter a amount</p>
+                        </div>
+                        <div class="item">
+                            <div class="price">
+                                <div class="form-row">
+                                    <div class="col"><span class="price"><strong>₹</strong></span></div>
+                                    <div class="col"><input class="form-control" type="number" id="item2-val" name="item2" value="0"></div>
+                                </div>
+                            </div>
+                            <p class="item-name">Product 2</p>
+                            <p class="item-description">Enter a amount</p>
+                        </div>
+                        <div class="total"><span>Total</span><span class="price"><strong>₹</strong><span id="total-val" type="number" name="total">0</span></span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(97,97,255);">Proceed</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html#">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="mailto:rootand58@gmail.com">mail us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="faq.html#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Other</h5>
+                    <ul>
+                        <li><a href="/products#">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p></p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="assets/js/order.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Faq-by-pomdre.js"></script>
+</body>
+
+</html>
